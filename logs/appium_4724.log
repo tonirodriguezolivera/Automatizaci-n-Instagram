@@ -1,0 +1,21 @@
+2025-08-15 19:16:46:110 [Appium] Welcome to Appium v2.19.0
+2025-08-15 19:16:46:115 [Appium] Non-default server args:
+2025-08-15 19:16:46:118 [Appium] { address: '127.0.0.1', allowCors: true, port: 4724, sessionOverride: true }
+2025-08-15 19:16:46:118 [Appium] The autodetected Appium home path: /home/customer/.appium
+2025-08-15 19:16:46:119 [Appium] Attempting to load driver uiautomator2...
+2025-08-15 19:16:46:123 [Appium] Requiring driver at /home/customer/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-08-15 19:16:46:842 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.722s
+2025-08-15 19:16:46:867 [Appium] You have enabled CORS requests from any host. Be careful not to visit sites which could maliciously try to start Appium sessions on your machine
+2025-08-15 19:16:46:872 [Appium] Appium REST http interface listener started on http://127.0.0.1:4724
+2025-08-15 19:16:46:873 [Appium] Available drivers:
+2025-08-15 19:16:46:873 [Appium]   - uiautomator2@4.2.8 (automationName 'UiAutomator2')
+2025-08-15 19:16:46:874 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-08-15 19:16:46:967 [HTTP] --> HEAD /status {}
+2025-08-15 19:16:46:969 [AppiumDriver@e615] Calling AppiumDriver.getStatus() with args: []
+2025-08-15 19:16:46:972 [AppiumDriver@e615] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.19.0"}}
+2025-08-15 19:16:46:978 [HTTP] <-- HEAD /status 200 9 ms - 111 
+2025-08-15 19:16:46:982 [HTTP] --> GET /status {}
+2025-08-15 19:16:46:983 [AppiumDriver@e615] Calling AppiumDriver.getStatus() with args: []
+2025-08-15 19:16:46:984 [AppiumDriver@e615] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.19.0"}}
+2025-08-15 19:16:46:986 [HTTP] <-- GET /status 200 2 ms - 111 
+2025-08-15 19:17:08:952 [Appium] Received SIGINT - shutting down

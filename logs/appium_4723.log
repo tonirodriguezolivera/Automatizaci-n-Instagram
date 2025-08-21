@@ -1,0 +1,21 @@
+2025-08-19 23:16:40:935 [Appium] Welcome to Appium v2.19.0
+2025-08-19 23:16:40:940 [Appium] Non-default server args:
+2025-08-19 23:16:40:942 [Appium] { address: '127.0.0.1', allowCors: true, sessionOverride: true }
+2025-08-19 23:16:40:942 [Appium] The autodetected Appium home path: /home/customer/.appium
+2025-08-19 23:16:40:943 [Appium] Attempting to load driver uiautomator2...
+2025-08-19 23:16:40:946 [Appium] Requiring driver at /home/customer/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-08-19 23:16:41:548 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.604s
+2025-08-19 23:16:41:570 [Appium] You have enabled CORS requests from any host. Be careful not to visit sites which could maliciously try to start Appium sessions on your machine
+2025-08-19 23:16:41:574 [Appium] Appium REST http interface listener started on http://127.0.0.1:4723
+2025-08-19 23:16:41:575 [Appium] Available drivers:
+2025-08-19 23:16:41:575 [Appium]   - uiautomator2@4.2.8 (automationName 'UiAutomator2')
+2025-08-19 23:16:41:576 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-08-19 23:16:42:047 [HTTP] --> HEAD /status {}
+2025-08-19 23:16:42:049 [AppiumDriver@e46b] Calling AppiumDriver.getStatus() with args: []
+2025-08-19 23:16:42:052 [AppiumDriver@e46b] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.19.0"}}
+2025-08-19 23:16:42:058 [HTTP] <-- HEAD /status 200 9 ms - 111 
+2025-08-19 23:16:42:062 [HTTP] --> GET /status {}
+2025-08-19 23:16:42:063 [AppiumDriver@e46b] Calling AppiumDriver.getStatus() with args: []
+2025-08-19 23:16:42:063 [AppiumDriver@e46b] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.19.0"}}
+2025-08-19 23:16:42:065 [HTTP] <-- GET /status 200 2 ms - 111 
+2025-08-19 23:17:00:472 [Appium] Received SIGINT - shutting down
