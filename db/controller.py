@@ -1,6 +1,7 @@
 from db.connect import DB
 from db.users import Users
 from db.avds import Avds
+from typing import List, Tuple
 
 class Controller:
     """Controlador para manejar operaciones con la base de datos (users y avds)."""
@@ -86,6 +87,36 @@ class Controller:
             list: Lista de tuplas con los registros de usuarios.
         """
         return self.users.read_all()
+    
+    
+    def get_users_by_status(self, status: str) -> List[Tuple]:
+        """
+        Devuelve usuarios filtrados por su propio status (columna users.status).
+        status ∈ {"All", "Active", "Completed", "Failed", "Pending"}
+
+        Estructura de users.read_all():
+          (user, password, key, new_password, avd_name, status, updated_at)
+
+        Si status == "All": retorna TODOS los usuarios (sin filtrar).
+        """
+        rows = self.users.read_all()  # [(u, p, k, np, avd_name, status, updated_at), ...]
+        status_norm = (status or "All").strip().lower()
+        if status_norm == "all":
+            return rows
+
+        # normalización simple
+        map_norm = {
+            "active": "active",
+            "completed": "completed",
+            "failed": "failed",
+            "pending": "pending",
+        }
+        wanted = map_norm.get(status_norm)
+        if wanted is None:
+            # Si mandan algo raro, devolvemos todo
+            return rows
+
+        return [r for r in rows if (r[5] or "").strip().lower() == wanted]
     
     def close(self):
         """Cierra la conexión a la base de datos."""

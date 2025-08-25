@@ -1,0 +1,6 @@
+./uploads/
+./logs/
+./reports/
+./.vscode/
+./__pycache__/
+./screenrecordings/

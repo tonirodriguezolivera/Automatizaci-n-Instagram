@@ -1,0 +1,406 @@
+2025-08-25 15:35:48:675 [Appium] Welcome to Appium v2.12.1
+2025-08-25 15:35:48:678 [Appium] Non-default server args:
+2025-08-25 15:35:48:680 [Appium] { address: '127.0.0.1', allowCors: true, port: 4753, sessionOverride: true }
+2025-08-25 15:35:48:680 [Appium] The autodetected Appium home path: C:\Users\zorem\.appium
+2025-08-25 15:35:48:681 [Appium] Attempting to load driver uiautomator2...
+2025-08-25 15:35:48:683 [Appium] Requiring driver at C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+2025-08-25 15:35:49:971 [Appium] AndroidUiautomator2Driver has been successfully loaded in 1.289s
+2025-08-25 15:35:49:998 [Appium] You have enabled CORS requests from any host. Be careful not to visit sites which could maliciously try to start Appium sessions on your machine
+2025-08-25 15:35:50:002 [Appium] Appium REST http interface listener started on http://127.0.0.1:4753
+2025-08-25 15:35:50:003 [Appium] Available drivers:
+2025-08-25 15:35:50:003 [Appium]   - uiautomator2@2.34.1 (automationName 'UiAutomator2')
+2025-08-25 15:35:50:003 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-08-25 15:35:50:509 [HTTP] --> HEAD /status {}
+2025-08-25 15:35:50:510 [AppiumDriver@6408] Calling AppiumDriver.getStatus() with args: []
+2025-08-25 15:35:50:512 [AppiumDriver@6408] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.12.1"}}
+2025-08-25 15:35:50:516 [HTTP] <-- HEAD /status 200 6 ms - 111 
+2025-08-25 15:35:50:536 [HTTP] --> GET /status {}
+2025-08-25 15:35:50:536 [AppiumDriver@6408] Calling AppiumDriver.getStatus() with args: []
+2025-08-25 15:35:50:537 [AppiumDriver@6408] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.12.1"}}
+2025-08-25 15:35:50:538 [HTTP] <-- GET /status 200 2 ms - 111 
+2025-08-25 15:36:31:175 [HTTP] Request idempotency key: a20a29b3-08c0-46c0-8e47-d7b5b8f5238d
+2025-08-25 15:36:31:232 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"UiAutomator2","platformName":"Android","appium:deviceName":"Nexus_5_API_31_Clone5","appium:platformVersion":"12","appium:udid":"emulator-5614","appium:appPackage":"com.instagram.android","appium:appActivity":".activity.MainTabActivity","appium:autoGrantPermissions":true}}}
+2025-08-25 15:36:31:234 [AppiumDriver@6408] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"UiAutomator2","platformName":"Android","appium:deviceName":"Nexus_5_API_31_Clone5","appium:platformVersion":"12","appium:udid":"emulator-5614","appium:appPackage":"com.instagram.android","appium:appActivity":".activity.MainTabActivity","appium:autoGrantPermissions":true}}]
+2025-08-25 15:36:31:235 [AppiumDriver@6408] Event 'newSessionRequested' logged at 1756136191235 (10:36:31 GMT-0500 (hora estándar de Perú))
+2025-08-25 15:36:31:241 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2025-08-25 15:36:31:241 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-08-25 15:36:31:241 [Appium] Will require it at C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver
+2025-08-25 15:36:31:247 [Appium] Requiring driver at C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+2025-08-25 15:36:31:247 [AppiumDriver@6408] Appium v2.12.1 creating new AndroidUiautomator2Driver (v2.34.1) session
+2025-08-25 15:36:31:248 [AppiumDriver@6408] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-08-25 15:36:31:248 [AppiumDriver@6408] Appium's BaseDriver version is 9.12.1
+2025-08-25 15:36:31:248 [AppiumDriver@6408] AndroidUiautomator2Driver's BaseDriver version is 9.12.1
+2025-08-25 15:36:31:249 [AppiumDriver@6408] There are no active sessions for cleanup
+2025-08-25 15:36:31:255 [38;5;-13m[AndroidUiautomator2Driver@3140] 
+2025-08-25 15:36:31:255 [38;5;-13m[AndroidUiautomator2Driver@3140] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "appium:deviceName": "Nexus_5_API_31_Clone5",
+    "appium:platformVersion": "12",
+    "appium:udid": "emulator-5614",
+    "appium:appPackage": "com.instagram.android",
+    "appium:appActivity": ".activity.MainTabActivity",
+    "appium:autoGrantPermissions": true
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-08-25 15:36:31:284 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Session created with session id: b3b212c9-bfad-4419-829c-bc8c8a381196
+2025-08-25 15:36:31:285 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Starting 'com.instagram.android' directly on the device
+2025-08-25 15:36:31:320 [b3b212c9][ADB] Found 2 'build-tools' folders under 'C:\Users\zorem\AppData\Local\Android\Sdk' (newest first):
+2025-08-25 15:36:31:320 [b3b212c9][ADB]     C:\Users\zorem\AppData\Local\Android\Sdk\build-tools\33.0.0
+2025-08-25 15:36:31:321 [b3b212c9][ADB]     C:\Users\zorem\AppData\Local\Android\Sdk\build-tools\27.0.3
+2025-08-25 15:36:31:348 [b3b212c9][ADB] Using 'adb.exe' from 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2025-08-25 15:36:31:349 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2025-08-25 15:36:31:433 [b3b212c9][AndroidDriver] Retrieving device list
+2025-08-25 15:36:31:434 [b3b212c9][ADB] Trying to find connected Android devices
+2025-08-25 15:36:31:435 [b3b212c9][ADB] Getting connected devices
+2025-08-25 15:36:31:522 [b3b212c9][ADB] Connected devices: [{"udid":"emulator-5594","state":"device"},{"udid":"emulator-5614","state":"device"}]
+2025-08-25 15:36:31:523 [b3b212c9][AndroidDriver] Using device: emulator-5614
+2025-08-25 15:36:31:535 [b3b212c9][ADB] Using 'adb.exe' from 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2025-08-25 15:36:31:535 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2025-08-25 15:36:31:637 [b3b212c9][ADB] Setting device id to emulator-5614
+2025-08-25 15:36:31:638 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell getprop ro.build.version.sdk'
+2025-08-25 15:36:31:922 [b3b212c9][ADB] Current device property 'ro.build.version.sdk': 31
+2025-08-25 15:36:31:923 [b3b212c9][ADB] Getting device platform version
+2025-08-25 15:36:31:923 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell getprop ro.build.version.release'
+2025-08-25 15:36:32:121 [b3b212c9][ADB] Current device property 'ro.build.version.release': 12
+2025-08-25 15:36:32:121 [b3b212c9][ADB] Device API level: 31
+2025-08-25 15:36:32:122 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Relaxing hidden api policy
+2025-08-25 15:36:32:123 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2025-08-25 15:36:32:646 [b3b212c9][AndroidDriver] No app sent in, not parsing package/activity
+2025-08-25 15:36:32:647 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 wait-for-device'
+2025-08-25 15:36:32:752 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell echo ping'
+2025-08-25 15:36:32:948 [b3b212c9][AndroidDriver] Pushing settings apk to device...
+2025-08-25 15:36:32:963 [b3b212c9][ADB] Getting package info for 'io.appium.settings'
+2025-08-25 15:36:32:964 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell dumpsys package io.appium.settings'
+2025-08-25 15:36:34:014 [b3b212c9][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.2.0' >= '5.2.0')
+2025-08-25 15:36:34:017 [b3b212c9][ADB] There is no need to install/upgrade 'C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2025-08-25 15:36:34:019 [b3b212c9][ADB] Getting IDs of all 'io.appium.settings' processes
+2025-08-25 15:36:34:021 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell 'pgrep --help; echo $?''
+2025-08-25 15:36:34:199 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:36:34:507 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell appops set io.appium.settings PROJECT_MEDIA allow'
+2025-08-25 15:36:34:763 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell cmd notification allow_listener io.appium.settings/.NLService'
+2025-08-25 15:36:34:964 [b3b212c9][ADB] Getting IDs of all 'io.appium.settings' processes
+2025-08-25 15:36:34:964 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:36:35:197 [b3b212c9][ADB] Starting Appium Settings app
+2025-08-25 15:36:35:198 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am start -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+2025-08-25 15:36:35:745 [b3b212c9][ADB] Getting IDs of all 'io.appium.settings' processes
+2025-08-25 15:36:35:745 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:36:36:398 [b3b212c9][ADB] Getting IDs of all 'io.appium.settings' processes
+2025-08-25 15:36:36:398 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:36:36:648 [b3b212c9][Logcat] Starting logs capture with command: C:\\Users\\zorem\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5614 logcat -v threadtime
+2025-08-25 15:36:36:876 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2025-08-25 15:36:36:879 [b3b212c9][ADB] Forwarding system: 8200 to device: 6790
+2025-08-25 15:36:36:880 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 forward tcp:8200 tcp:6790'
+2025-08-25 15:36:36:963 [b3b212c9][ADB] Checking app cert for C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.12.16.apk
+2025-08-25 15:36:36:963 [b3b212c9][ADB] Checking app cert for C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2025-08-25 15:36:36:992 [b3b212c9][ADB] Using 'apksigner.jar' from 'C:\Users\zorem\AppData\Local\Android\Sdk\build-tools\33.0.0\lib\apksigner.jar'
+2025-08-25 15:36:36:994 [b3b212c9][ADB] Starting apksigner: C:\\Users\\zorem\\.jdks\\openjdk-18.0.2\\bin\\java.exe -Xmx1024M -Xss1m -jar C:\\Users\\zorem\\AppData\\Local\\Android\\Sdk\\build-tools\\33.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\zorem\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2025-08-25 15:36:37:219 [b3b212c9][ADB] Starting apksigner: C:\\Users\\zorem\\.jdks\\openjdk-18.0.2\\bin\\java.exe -Xmx1024M -Xss1m -jar C:\\Users\\zorem\\AppData\\Local\\Android\\Sdk\\build-tools\\33.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\zorem\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v5.12.16.apk
+2025-08-25 15:36:37:773 [b3b212c9][ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2025-08-25 15:36:37:774 [b3b212c9][ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2025-08-25 15:36:37:774 [b3b212c9][ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2025-08-25 15:36:37:774 [b3b212c9][ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2025-08-25 15:36:37:774 [b3b212c9][ADB] 
+2025-08-25 15:36:37:775 [b3b212c9][ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2025-08-25 15:36:37:775 [b3b212c9][ADB] 'C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2025-08-25 15:36:37:776 [b3b212c9][ADB] Getting install status for io.appium.uiautomator2.server.test
+2025-08-25 15:36:37:776 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm path io.appium.uiautomator2.server.test'
+2025-08-25 15:36:37:953 [b3b212c9][ADB] 'io.appium.uiautomator2.server.test' is installed
+2025-08-25 15:36:39:519 [b3b212c9][ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2025-08-25 15:36:39:519 [b3b212c9][ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2025-08-25 15:36:39:519 [b3b212c9][ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2025-08-25 15:36:39:520 [b3b212c9][ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2025-08-25 15:36:39:520 [b3b212c9][ADB] 
+2025-08-25 15:36:39:520 [b3b212c9][ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.12.16.apk'
+2025-08-25 15:36:39:520 [b3b212c9][ADB] 'C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.12.16.apk' is signed with the default certificate
+2025-08-25 15:36:39:521 [b3b212c9][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2025-08-25 15:36:39:521 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell dumpsys package io.appium.uiautomator2.server'
+2025-08-25 15:36:41:450 [b3b212c9][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.12.16' >= '5.12.16')
+2025-08-25 15:36:41:451 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Server packages status: [{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\zorem\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v5.12.16.apk","appId":"io.appium.uiautomator2.server"},{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\zorem\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2025-08-25 15:36:41:451 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Server packages are not going to be (re)installed
+2025-08-25 15:36:41:472 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Waiting up to 30000ms for services to be available
+2025-08-25 15:36:41:473 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm list instrumentation'
+2025-08-25 15:36:41:570 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2025-08-25 15:36:41:573 [b3b212c9][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2025-08-25 15:36:41:574 [b3b212c9][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2025-08-25 15:36:41:574 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2025-08-25 15:36:41:840 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] No app capability. Assuming it is already on the device
+2025-08-25 15:36:41:840 [b3b212c9][ADB] Getting install status for com.instagram.android
+2025-08-25 15:36:41:841 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm path com.instagram.android'
+2025-08-25 15:36:41:971 [b3b212c9][ADB] 'com.instagram.android' is installed
+2025-08-25 15:36:41:972 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am force-stop com.instagram.android'
+2025-08-25 15:36:42:243 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm clear com.instagram.android'
+2025-08-25 15:36:43:729 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell dumpsys package com.instagram.android'
+2025-08-25 15:36:45:032 [b3b212c9][ADB] Retrieving requested permissions
+2025-08-25 15:36:45:038 [b3b212c9][ADB] Retrieved 104 permissions from requested group
+2025-08-25 15:36:45:039 [b3b212c9][ADB] Retrieving granted permissions
+2025-08-25 15:36:45:041 [b3b212c9][ADB] Retrieved 25 permissions from install,runtime groups
+2025-08-25 15:36:45:042 [b3b212c9][ADB] Granting permissions ["android.permission.GET_ACCOUNTS","android.permission.CAMERA","android.permission.READ_CONTACTS","android.permission.ACCESS_FINE_LOCATION","android.permission.RECORD_AUDIO","android.permission.READ_EXTERNAL_STORAGE","android.permission.READ_MEDIA_IMAGES","android.permission.READ_MEDIA_VIDEO","android.permission.READ_MEDIA_VISUAL_USER_SELECTED","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.ACCESS_MEDIA_LOCATION","android.permission.POST_NOTIFICATIONS","android.permission.READ_PHONE_STATE","android.permission.READ_PHONE_NUMBERS","android.permission.READ_BASIC_PHONE_STATE","android.permission.ANSWER_PHONE_CALLS","android.permission.READ_CALL_LOG","android.launcher.permission.CHANGE_BADGE","android.permission.UPDATE_APP_BADGE","android.permission.WRITE_CALENDAR","android.permission.FOREGROUND_SERVICE_DATA_SYNC","android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK","android.permission.ACCESS_ADSERVICES_ATTRIBUTION","android.permission.ACCESS_ADSERVICES_AD_ID","android.permission.FOREGROUND_SERVICE_PHONE_CALL","android.permission.FOREGROUND_SERVICE_MICROPHONE","android.permission.RUN_USER_INITIATED_JOBS","android.permission.CREDENTIAL_MANAGER_SET_ALLOWED_PROVIDERS","android.permission.BLUETOOTH_CONNECT","android.permission.MEDIA_PROJECTION","android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION","android.permission.CAPTURE_VIDEO_OUTPUT","android.permission.CALL_PHONE","android.permission.FOREGROUND_SERVICE_LOCATION","android.permission.FOREGROUND_SERVICE_CAMERA","android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE","android.permission.ACCESS_COARSE_LOCATION","android.permission.CAPTURE_VIDEO_OUTPUT","android.permission.READ_CALL_LOG","android.permission.ACCESS_FINE_LOCATION","android.permission.ANSWER_PHONE_CALLS","android.permission.READ_PHONE_NUMBERS","android.permission.BLUETOOTH_CONNECT","android.permission.READ_EXTERNAL_STORAGE","android.permission.ACCESS_COARSE_LOCATION","android.permission.READ_PHONE_STATE","android.permission.CALL_PHONE","android.permission.CAMERA","android.permission.WRITE_CALENDAR","android.permission.GET_ACCOUNTS","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.RECORD_AUDIO","android.permission.READ_CONTACTS","android.permission.ACCESS_MEDIA_LOCATION"] to 'com.instagram.android'
+2025-08-25 15:36:45:043 [b3b212c9][ADB] Got the following command chunks to execute: [["pm","grant","com.instagram.android","android.permission.GET_ACCOUNTS",";","pm","grant","com.instagram.android","android.permission.CAMERA",";","pm","grant","com.instagram.android","android.permission.READ_CONTACTS",";","pm","grant","com.instagram.android","android.permission.ACCESS_FINE_LOCATION",";","pm","grant","com.instagram.android","android.permission.RECORD_AUDIO",";","pm","grant","com.instagram.android","android.permission.READ_EXTERNAL_STORAGE",";","pm","grant","com.instagram.android","android.permission.READ_MEDIA_IMAGES",";","pm","grant","com.instagram.android","android.permission.READ_MEDIA_VIDEO",";","pm","grant","com.instagram.android","android.permission.READ_MEDIA_VISUAL_USER_SELECTED",";","pm","grant","com.instagram.android","android.permission.WRITE_EXTERNAL_STORAGE",";","pm","grant","com.instagram.android","android.permission.ACCESS_MEDIA_LOCATION",";","pm","grant","com.instagram.android","android.permission.POST_NOTIFICATIONS",";","pm","grant","com.instagram.android","android.permission.READ_PHONE_STATE",";","pm","grant","com.instagram.android","android.permission.READ_PHONE_NUMBERS",";"],["pm","grant","com.instagram.android","android.permission.READ_BASIC_PHONE_STATE",";","pm","grant","com.instagram.android","android.permission.ANSWER_PHONE_CALLS",";","pm","grant","com.instagram.android","android.permission.READ_CALL_LOG",";","pm","grant","com.instagram.android","android.launcher.permission.CHANGE_BADGE",";","pm","grant","com.instagram.android","android.permission.UPDATE_APP_BADGE",";","pm","grant","com.instagram.android","android.permission.WRITE_CALENDAR",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_DATA_SYNC",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",";","pm","grant","com.instagram.android","android.permission.ACCESS_ADSERVICES_ATTRIBUTION",";","pm","grant","com.instagram.android","android.permission.ACCESS_ADSERVICES_AD_ID",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_PHONE_CALL",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_MICROPHONE",";","pm","grant","com.instagram.android","android.permission.RUN_USER_INITIATED_JOBS",";"],["pm","grant","com.instagram.android","android.permission.CREDENTIAL_MANAGER_SET_ALLOWED_PROVIDERS",";","pm","grant","com.instagram.android","android.permission.BLUETOOTH_CONNECT",";","pm","grant","com.instagram.android","android.permission.MEDIA_PROJECTION",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",";","pm","grant","com.instagram.android","android.permission.CAPTURE_VIDEO_OUTPUT",";","pm","grant","com.instagram.android","android.permission.CALL_PHONE",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_LOCATION",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_CAMERA",";","pm","grant","com.instagram.android","android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",";","pm","grant","com.instagram.android","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","com.instagram.android","android.permission.CAPTURE_VIDEO_OUTPUT",";","pm","grant","com.instagram.android","android.permission.READ_CALL_LOG",";","pm","grant","com.instagram.android","android.permission.ACCESS_FINE_LOCATION",";"],["pm","grant","com.instagram.android","android.permission.ANSWER_PHONE_CALLS",";","pm","grant","com.instagram.android","android.permission.READ_PHONE_NUMBERS",";","pm","grant","com.instagram.android","android.permission.BLUETOOTH_CONNECT",";","pm","grant","com.instagram.android","android.permission.READ_EXTERNAL_STORAGE",";","pm","grant","com.instagram.android","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","com.instagram.android","android.permission.READ_PHONE_STATE",";","pm","grant","com.instagram.android","android.permission.CALL_PHONE",";","pm","grant","com.instagram.android","android.permission.CAMERA",";","pm","grant","com.instagram.android","android.permission.WRITE_CALENDAR",";","pm","grant","com.instagram.android","android.permission.GET_ACCOUNTS",";","pm","grant","com.instagram.android","android.permission.WRITE_EXTERNAL_STORAGE",";","pm","grant","com.instagram.android","android.permission.RECORD_AUDIO",";","pm","grant","com.instagram.android","android.permission.READ_CONTACTS",";","pm","grant","com.instagram.android","android.permission.ACCESS_MEDIA_LOCATION",";"]]
+2025-08-25 15:36:45:043 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm grant com.instagram.android android.permission.GET_ACCOUNTS ; pm grant com.instagram.android android.permission.CAMERA ; pm grant com.instagram.android android.permission.READ_CONTACTS ; pm grant com.instagram.android android.permission.ACCESS_FINE_LOCATION ; pm grant com.instagram.android android.permission.RECORD_AUDIO ; pm grant com.instagram.android android.permission.READ_EXTERNAL_STORAGE ; pm grant com.instagram.android android.permission.READ_MEDIA_IMAGES ; pm grant com.instagram.android android.permission.READ_MEDIA_VIDEO ; pm grant com.instagram.android android.permission.READ_MEDIA_VISUAL_USER_SELECTED ; pm grant com.instagram.android android.permission.WRITE_EXTERNAL_STORAGE ; pm grant com.instagram.android android.permission.ACCESS_MEDIA_LOCATION ; pm grant com.instagram.android android.permission.POST_NOTIFICATIONS ; pm grant com.instagram.android android.permission.READ_PHONE_STATE ; pm grant com.instagram.android android.permission.READ_PHONE_NUMBERS ;'
+2025-08-25 15:36:46:380 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm grant com.instagram.android android.permission.READ_BASIC_PHONE_STATE ; pm grant com.instagram.android android.permission.ANSWER_PHONE_CALLS ; pm grant com.instagram.android android.permission.READ_CALL_LOG ; pm grant com.instagram.android android.launcher.permission.CHANGE_BADGE ; pm grant com.instagram.android android.permission.UPDATE_APP_BADGE ; pm grant com.instagram.android android.permission.WRITE_CALENDAR ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_DATA_SYNC ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK ; pm grant com.instagram.android android.permission.ACCESS_ADSERVICES_ATTRIBUTION ; pm grant com.instagram.android android.permission.ACCESS_ADSERVICES_AD_ID ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_PHONE_CALL ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_MICROPHONE ; pm grant com.instagram.android android.permission.RUN_USER_INITIATED_JOBS ;'
+2025-08-25 15:36:46:941 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm grant com.instagram.android android.permission.CREDENTIAL_MANAGER_SET_ALLOWED_PROVIDERS ; pm grant com.instagram.android android.permission.BLUETOOTH_CONNECT ; pm grant com.instagram.android android.permission.MEDIA_PROJECTION ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION ; pm grant com.instagram.android android.permission.CAPTURE_VIDEO_OUTPUT ; pm grant com.instagram.android android.permission.CALL_PHONE ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_LOCATION ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_CAMERA ; pm grant com.instagram.android android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE ; pm grant com.instagram.android android.permission.ACCESS_COARSE_LOCATION ; pm grant com.instagram.android android.permission.CAPTURE_VIDEO_OUTPUT ; pm grant com.instagram.android android.permission.READ_CALL_LOG ; pm grant com.instagram.android android.permission.ACCESS_FINE_LOCATION ;'
+2025-08-25 15:36:48:311 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm grant com.instagram.android android.permission.ANSWER_PHONE_CALLS ; pm grant com.instagram.android android.permission.READ_PHONE_NUMBERS ; pm grant com.instagram.android android.permission.BLUETOOTH_CONNECT ; pm grant com.instagram.android android.permission.READ_EXTERNAL_STORAGE ; pm grant com.instagram.android android.permission.ACCESS_COARSE_LOCATION ; pm grant com.instagram.android android.permission.READ_PHONE_STATE ; pm grant com.instagram.android android.permission.CALL_PHONE ; pm grant com.instagram.android android.permission.CAMERA ; pm grant com.instagram.android android.permission.WRITE_CALENDAR ; pm grant com.instagram.android android.permission.GET_ACCOUNTS ; pm grant com.instagram.android android.permission.WRITE_EXTERNAL_STORAGE ; pm grant com.instagram.android android.permission.RECORD_AUDIO ; pm grant com.instagram.android android.permission.READ_CONTACTS ; pm grant com.instagram.android android.permission.ACCESS_MEDIA_LOCATION ;'
+2025-08-25 15:36:49:221 [b3b212c9][AndroidDriver] Performed fast reset on the installed 'com.instagram.android' application (stop and clear)
+2025-08-25 15:36:49:222 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Performing shallow cleanup of automation leftovers
+2025-08-25 15:36:49:252 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] No obsolete sessions have been detected (socket hang up)
+2025-08-25 15:36:49:253 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am force-stop io.appium.uiautomator2.server.test'
+2025-08-25 15:36:49:345 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Starting UIAutomator2 server 5.12.16
+2025-08-25 15:36:49:347 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Using UIAutomator2 server from 'C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.12.16.apk' and test from 'C:\Users\zorem\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2025-08-25 15:36:49:347 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Waiting up to 30000ms for UiAutomator2 to be online...
+2025-08-25 15:36:49:349 [b3b212c9][ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5614","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2025-08-25 15:36:49:358 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:49:360 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:49:482 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:50:484 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:50:485 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:50:506 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:51:509 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:51:510 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:51:523 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:52:526 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:52:526 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:52:536 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:53:542 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:53:542 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:53:553 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:54:555 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:54:555 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:54:568 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:55:574 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:55:574 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:55:585 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:56:524 [b3b212c9][Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2025-08-25 15:36:56:588 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:56:588 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:56:598 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:57:600 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:57:601 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:57:611 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:58:621 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:58:621 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:58:635 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:36:59:641 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:36:59:642 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:36:59:653 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] socket hang up
+2025-08-25 15:37:00:657 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/status' to command name 'getStatus'
+2025-08-25 15:37:00:658 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2025-08-25 15:37:01:075 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2025-08-25 15:37:01:076 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] The initialization of the instrumentation process took 11728ms
+2025-08-25 15:37:01:077 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/session' to command name 'createSession'
+2025-08-25 15:37:01:077 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platformName":"Android","automationName":"UiAutomator2","deviceName":"emulator-5614","platformVersion":"12","udid":"emulator-5614","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","autoGrantPermissions":true,"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","automationName":"UiAutomator2","deviceName":"Nexus_5_API_31_Clone5","platformVersion":"12","udid":"emulator-5614","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","autoGrantPermissions":true},"deviceUDID":"emulator-5614"}],"alwaysMatch":{}}}
+2025-08-25 15:37:01:242 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169","value":{"capabilities":{"firstMatch":[{"platformName":"Android","automationName":"UiAutomator2","deviceName":"emulator-5614","platformVersion":"12","udid":"emulator-5614","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","autoGrantPermissions":true,"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","automationName":"UiAutomator2","deviceName":"Nexus_5_API_31_Clone5","platformVersion":"12","udid":"emulator-5614","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","autoGrantPermissions":true},"deviceUDID":"emulator-5614"}],"alwaysMatch":{}},"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169"}}
+2025-08-25 15:37:01:243 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Determined the downstream protocol as 'W3C'
+2025-08-25 15:37:01:287 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/c316030c-5e8f-4975-bc8e-abb261581169/appium/device/pixel_ratio] with no body
+2025-08-25 15:37:01:292 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2025-08-25 15:37:01:292 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/c316030c-5e8f-4975-bc8e-abb261581169/appium/device/system_bars] with no body
+2025-08-25 15:37:01:294 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/window/current/size' to command name 'getWindowSize'
+2025-08-25 15:37:01:294 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/c316030c-5e8f-4975-bc8e-abb261581169/window/current/size] with no body
+2025-08-25 15:37:01:305 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/c316030c-5e8f-4975-bc8e-abb261581169/appium/device/info] with no body
+2025-08-25 15:37:01:311 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell dumpsys window'
+2025-08-25 15:37:01:379 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169","value":3}
+2025-08-25 15:37:01:395 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169","value":{"statusBar":72}}
+2025-08-25 15:37:01:399 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169","value":{"height":1776,"width":1080}}
+2025-08-25 15:37:01:483 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169","value":{"androidId":"446ed9c5904fa0d2","apiVersion":"31","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":480,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_x86_64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":12000,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-50,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":-1,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapab...
+2025-08-25 15:37:01:554 [b3b212c9][Instrumentation] s_glBindAttribLocation: bind attrib 0 name position
+2025-08-25 15:37:01:557 [b3b212c9][Instrumentation] s_glBindAttribLocation: bind attrib 1 name localCoord
+2025-08-25 15:37:01:628 [b3b212c9][AndroidDriver] Screen already unlocked, doing nothing
+2025-08-25 15:37:01:629 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Starting 'com.instagram.android/.activity.MainTabActivity and waiting for 'com.instagram.android/.activity.MainTabActivity'
+2025-08-25 15:37:01:629 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am start -W -n com.instagram.android/.activity.MainTabActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2025-08-25 15:37:12:714 [b3b212c9][AppiumDriver@6408] New AndroidUiautomator2Driver session created successfully, session b3b212c9-bfad-4419-829c-bc8c8a381196 added to master session list
+2025-08-25 15:37:12:715 [b3b212c9][AppiumDriver@6408] Event 'newSessionStarted' logged at 1756136232715 (10:37:12 GMT-0500 (hora estándar de Perú))
+2025-08-25 15:37:12:716 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Cached the protocol value 'W3C' for the new session b3b212c9-bfad-4419-829c-bc8c8a381196
+2025-08-25 15:37:12:716 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.createSession() result: {"capabilities":{"platformName":"Android","automationName":"UiAutomator2","deviceName":"emulator-5614","platformVersion":"12","udid":"emulator-5614","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","autoGrantPermissions":true,"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","automationName":"UiAutomator2","deviceName":"Nexus_5_API_31_Clone5","platformVersion":"12","udid":"emulator-5614","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","autoGrantPermissions":true},"deviceUDID":"emulator-5614","pixelRatio":"3","statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1704},"deviceApiLevel":31,"deviceManufacturer":"Google","deviceModel":"sdk_gphone64_x86_64","deviceScreenSize":"1080x1920","deviceScreenDensity":480}}
+2025-08-25 15:37:12:721 [b3b212c9][HTTP] <-- POST /session 200 41487 ms - 1041 
+2025-08-25 15:37:12:729 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync {"script":"mobile: terminateApp","args":[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}]}
+2025-08-25 15:37:12:741 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.execute() with args: ["mobile: terminateApp",[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}],"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:12:742 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Executing method 'mobile: terminateApp'
+2025-08-25 15:37:12:743 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Terminating 'com.instagram.android'
+2025-08-25 15:37:12:744 [b3b212c9][ADB] Getting IDs of all 'com.instagram.android' processes
+2025-08-25 15:37:12:744 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)com\.instagram\.android\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:12:950 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am force-stop com.instagram.android'
+2025-08-25 15:37:14:348 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Querying the state of 'com.instagram.android'
+2025-08-25 15:37:14:348 [b3b212c9][ADB] Getting install status for com.instagram.android
+2025-08-25 15:37:14:348 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm path com.instagram.android'
+2025-08-25 15:37:14:554 [b3b212c9][ADB] 'com.instagram.android' is installed
+2025-08-25 15:37:14:554 [b3b212c9][ADB] Getting IDs of all 'com.instagram.android' processes
+2025-08-25 15:37:14:554 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)com\.instagram\.android\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:14:689 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] 'com.instagram.android' has been successfully terminated
+2025-08-25 15:37:14:690 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.execute() result: true
+2025-08-25 15:37:14:692 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync 200 1962 ms - 14 
+2025-08-25 15:37:15:696 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync {"script":"mobile: activateApp","args":[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}]}
+2025-08-25 15:37:15:704 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.execute() with args: ["mobile: activateApp",[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}],"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:15:705 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Executing method 'mobile: activateApp'
+2025-08-25 15:37:15:705 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Activating 'com.instagram.android'
+2025-08-25 15:37:15:706 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell cmd package resolve-activity --brief com.instagram.android'
+2025-08-25 15:37:15:790 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am start-activity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.instagram.android/.activity.MainTabActivity'
+2025-08-25 15:37:15:994 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.instagram.android/.activity.MainTabActivity }
+2025-08-25 15:37:15:995 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.execute() result: null
+2025-08-25 15:37:15:996 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync 200 299 ms - 14 
+2025-08-25 15:37:17:008 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/start_recording_screen {"options":{"timeLimit":"120","bitRate":4000000,"videoSize":"720x1280"}}
+2025-08-25 15:37:17:008 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.startRecordingScreen() with args: [{"timeLimit":"120","bitRate":4000000,"videoSize":"720x1280"},"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:17:009 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:17:010 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:17:111 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Screen recording has not been previously started by Appium. There is nothing to stop
+2025-08-25 15:37:17:111 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:17:111 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:17:197 [b3b212c9][ADB] Building screenrecord process with the command line: adb -P 5037 -s emulator-5614 shell screenrecord --size 720x1280 --time-limit 120 --bit-rate 4000000 /sdcard/0e52048a.mp4
+2025-08-25 15:37:17:205 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell "[ -e '/sdcard/0e52048a.mp4' ] && echo __PASS__"'
+2025-08-25 15:37:17:580 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell "[ -e '/sdcard/0e52048a.mp4' ] && echo __PASS__"'
+2025-08-25 15:37:17:767 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.startRecordingScreen() result: ""
+2025-08-25 15:37:17:768 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/start_recording_screen 200 760 ms - 12 
+2025-08-25 15:37:22:784 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/stop_recording_screen {"options":{}}
+2025-08-25 15:37:22:785 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.stopRecordingScreen() with args: [{},"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:22:786 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:22:786 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:23:079 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell kill -2 3826'
+2025-08-25 15:37:23:160 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:23:161 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:23:792 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:23:792 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:24:426 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:24:427 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:25:116 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:25:116 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:25:735 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:25:735 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:26:417 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:26:418 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:27:017 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:27:017 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:27:619 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:27:619 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:28:252 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:28:252 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:28:856 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:28:857 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:29:454 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:29:455 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:30:061 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:30:062 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:30:664 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:30:664 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:31:346 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:31:347 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:32:019 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:32:019 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:32:691 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:32:691 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:33:168 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:33:168 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:33:376 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Unable to stop the background screen recording: Condition unmet after 10216 ms. Timing out.
+2025-08-25 15:37:33:377 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] The resulting video might be corrupted
+2025-08-25 15:37:33:389 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 pull /sdcard/0e52048a.mp4 C:\Users\zorem\AppData\Local\Temp\2025725-19104-13gozke.7c9l\0e52048a.mp4'
+2025-08-25 15:37:33:468 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell rm -rf /sdcard/0e52048a.mp4'
+2025-08-25 15:37:33:847 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] The size of the resulting screen recording is 8.24 KB
+2025-08-25 15:37:33:862 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.stopRecordingScreen() result: "AAAAGGZ0eXBtcDQyAAAAAGlzb21tcDQyAAAEsG1vb3YAAABsbXZoZAAAAADk0jOy5NIzsgAAJxAAAS9IAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB2bWV0YQAAACFoZGxyAAAAAAAAAABtZHRhAAAAAAAAAAAAAAAAAAAAACtrZXlzAAAAAAAAAAEAAAAbbWR0YWNvbS5hbmRyb2lkLnZlcnNpb24AAAAiaWxzdAAAABoAAAABAAAAEmRhdGEAAAABAAAAADEyAAACIHRyYWsAAABcdGtoZAAAAAfk0jOy5NIzsgAAAAEAAAAAAAEvSAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAC0AAABQAAAAAAAbxtZGlhAAAAIG1kaGQAAAAA5NIzsuTSM7IAAV+QAAqpjAAAAAAAAAAsaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlAAAAAWhtaW5mAAAAFHZtaGQAAAABAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAAEoc3RibAAAAKRzdHNkAAAAAAAAAAEAAACUYXZjMQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAALQBQAASAAAAEgAAAAAAAAAAQAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgABj//wAAACthdmNDAULAKf/hABJnQsApjWgLQKGkICAgIPCIRqABAAZozgGoNcgAAAATY29scm5jbHgAAQABAAEAAAAAGHN0dHMAAAAAAAAAAQAAAAIABVTGAAAAFHN0c3MAAAAAAAAAAQAAAAEAAAAcc3RzegAAAAAAAAAAAAAAAgAAFAMAAAAqAAAAHHN0c2MAAAAAAAAA...
+2025-08-25 15:37:33:863 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/stop_recording_screen 200 11079 ms - 11256 
+2025-08-25 15:37:33:876 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync {"script":"mobile: terminateApp","args":[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}]}
+2025-08-25 15:37:33:878 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.execute() with args: ["mobile: terminateApp",[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}],"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:33:879 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Executing method 'mobile: terminateApp'
+2025-08-25 15:37:33:879 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Terminating 'com.instagram.android'
+2025-08-25 15:37:33:879 [b3b212c9][ADB] Getting IDs of all 'com.instagram.android' processes
+2025-08-25 15:37:33:880 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)com\.instagram\.android\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:34:029 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am force-stop com.instagram.android'
+2025-08-25 15:37:34:392 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Querying the state of 'com.instagram.android'
+2025-08-25 15:37:34:392 [b3b212c9][ADB] Getting install status for com.instagram.android
+2025-08-25 15:37:34:393 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pm path com.instagram.android'
+2025-08-25 15:37:34:602 [b3b212c9][ADB] 'com.instagram.android' is installed
+2025-08-25 15:37:34:602 [b3b212c9][ADB] Getting IDs of all 'com.instagram.android' processes
+2025-08-25 15:37:34:603 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)com\.instagram\.android\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:34:732 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] 'com.instagram.android' has been successfully terminated
+2025-08-25 15:37:34:735 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.execute() result: true
+2025-08-25 15:37:34:737 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync 200 860 ms - 14 
+2025-08-25 15:37:35:750 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync {"script":"mobile: activateApp","args":[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}]}
+2025-08-25 15:37:35:751 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.execute() with args: ["mobile: activateApp",[{"appId":"com.instagram.android","bundleId":"com.instagram.android"}],"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:35:751 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Executing method 'mobile: activateApp'
+2025-08-25 15:37:35:751 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Activating 'com.instagram.android'
+2025-08-25 15:37:35:752 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell cmd package resolve-activity --brief com.instagram.android'
+2025-08-25 15:37:35:820 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am start-activity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.instagram.android/.activity.MainTabActivity'
+2025-08-25 15:37:36:057 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.instagram.android/.activity.MainTabActivity }
+2025-08-25 15:37:36:059 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.execute() result: null
+2025-08-25 15:37:36:061 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/execute/sync 200 310 ms - 14 
+2025-08-25 15:37:37:064 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/start_recording_screen {"options":{"timeLimit":"120","bitRate":4000000,"videoSize":"720x1280"}}
+2025-08-25 15:37:37:065 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.startRecordingScreen() with args: [{"timeLimit":"120","bitRate":4000000,"videoSize":"720x1280"},"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:37:065 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:37:065 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:37:190 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Screen recording has not been previously started by Appium. There is nothing to stop
+2025-08-25 15:37:37:190 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:37:190 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:37:314 [b3b212c9][ADB] Building screenrecord process with the command line: adb -P 5037 -s emulator-5614 shell screenrecord --size 720x1280 --time-limit 120 --bit-rate 4000000 /sdcard/87b20f02.mp4
+2025-08-25 15:37:37:324 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell "[ -e '/sdcard/87b20f02.mp4' ] && echo __PASS__"'
+2025-08-25 15:37:37:679 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell "[ -e '/sdcard/87b20f02.mp4' ] && echo __PASS__"'
+2025-08-25 15:37:38:062 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell "[ -e '/sdcard/87b20f02.mp4' ] && echo __PASS__"'
+2025-08-25 15:37:38:138 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.startRecordingScreen() result: ""
+2025-08-25 15:37:38:140 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/start_recording_screen 200 1075 ms - 12 
+2025-08-25 15:37:43:150 [b3b212c9][HTTP] --> POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/stop_recording_screen {"options":{}}
+2025-08-25 15:37:43:151 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.stopRecordingScreen() with args: [{},"b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:43:152 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:43:153 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:43:304 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell kill -2 4748'
+2025-08-25 15:37:43:442 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:43:443 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:44:141 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:44:142 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:44:828 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:44:829 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:45:482 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:45:483 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:46:153 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:46:153 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:46:762 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:46:763 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:47:378 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:47:379 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:48:015 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:48:015 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:48:621 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:48:621 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:49:257 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:49:258 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:49:905 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:49:906 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:50:532 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:50:532 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:51:139 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:51:139 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:51:750 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:51:750 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:52:393 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:52:393 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:53:036 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:53:036 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:53:443 [b3b212c9][ADB] Getting IDs of all 'screenrecord' processes
+2025-08-25 15:37:53:444 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2025-08-25 15:37:53:563 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Unable to stop the background screen recording: Condition unmet after 10121 ms. Timing out.
+2025-08-25 15:37:53:564 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] The resulting video might be corrupted
+2025-08-25 15:37:53:569 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 pull /sdcard/87b20f02.mp4 C:\Users\zorem\AppData\Local\Temp\2025725-19104-6hypn7.82wu\87b20f02.mp4'
+2025-08-25 15:37:53:662 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell rm -rf /sdcard/87b20f02.mp4'
+2025-08-25 15:37:53:820 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] The size of the resulting screen recording is 60.83 KB
+2025-08-25 15:37:53:828 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Responding to client with driver.stopRecordingScreen() result: "AAAAGGZ0eXBtcDQyAAAAAGlzb21tcDQyAAAFWG1vb3YAAABsbXZoZAAAAADk0jPG5NIzxgAAJxAAACTQAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB2bWV0YQAAACFoZGxyAAAAAAAAAABtZHRhAAAAAAAAAAAAAAAAAAAAACtrZXlzAAAAAAAAAAEAAAAbbWR0YWNvbS5hbmRyb2lkLnZlcnNpb24AAAAiaWxzdAAAABoAAAABAAAAEmRhdGEAAAABAAAAADEyAAACyHRyYWsAAABcdGtoZAAAAAfk0jPG5NIzxgAAAAEAAAAAAAAk0AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAC0AAABQAAAAAAAmRtZGlhAAAAIG1kaGQAAAAA5NIzxuTSM8YAAV+QAAFLVAAAAAAAAAAsaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlAAAAAhBtaW5mAAAAFHZtaGQAAAABAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAAHQc3RibAAAAKRzdHNkAAAAAAAAAAEAAACUYXZjMQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAALQBQAASAAAAEgAAAAAAAAAAQAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgABj//wAAACthdmNDAULAKf/hABJnQsApjWgLQKGkICAgIPCIRqABAAZozgGoNcgAAAATY29scm5jbHgAAQABAAEAAAAAiHN0dHMAAAAAAAAADwAAAAEAAAfMAAAAAQAADDAAAAABAAAnWwAAAAEAACDUAAAAAQAAFBwAAAABAAAOHgAAAAEAABQNAAAAAQAAGTsAAAABAAAM...
+2025-08-25 15:37:53:831 [b3b212c9][HTTP] <-- POST /session/b3b212c9-bfad-4419-829c-bc8c8a381196/appium/stop_recording_screen 200 10681 ms - 83064 
+2025-08-25 15:37:53:848 [b3b212c9][HTTP] --> DELETE /session/b3b212c9-bfad-4419-829c-bc8c8a381196 {}
+2025-08-25 15:37:53:848 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Calling AppiumDriver.deleteSession() with args: ["b3b212c9-bfad-4419-829c-bc8c8a381196"]
+2025-08-25 15:37:53:849 [b3b212c9][AppiumDriver@6408] Event 'quitSessionRequested' logged at 1756136273848 (10:37:53 GMT-0500 (hora estándar de Perú))
+2025-08-25 15:37:53:849 [b3b212c9][AppiumDriver@6408] Removing session b3b212c9-bfad-4419-829c-bc8c8a381196 from our master session list
+2025-08-25 15:37:53:850 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Deleting UiAutomator2 session
+2025-08-25 15:37:53:851 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Deleting UiAutomator2 server session
+2025-08-25 15:37:53:852 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Matched '/' to command name 'deleteSession'
+2025-08-25 15:37:53:853 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/c316030c-5e8f-4975-bc8e-abb261581169] with no body
+2025-08-25 15:37:53:976 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Got response with status 200: {"sessionId":"c316030c-5e8f-4975-bc8e-abb261581169","value":null}
+2025-08-25 15:37:53:977 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-08-25 15:37:53:986 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell am force-stop com.instagram.android'
+2025-08-25 15:37:54:275 [b3b212c9][Logcat] Stopping logcat capture
+2025-08-25 15:37:54:283 [b3b212c9][ADB] Removing forwarded port socket connection: 8200 
+2025-08-25 15:37:54:283 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 forward --remove tcp:8200'
+2025-08-25 15:37:54:328 [b3b212c9][38;5;-13m[AndroidUiautomator2Driver@3140] Restoring hidden api policy to the device default configuration
+2025-08-25 15:37:54:328 [b3b212c9][ADB] Running 'C:\Users\zorem\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5614 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-08-25 15:37:54:699 [b3b212c9][AppiumDriver@6408] Event 'quitSessionFinished' logged at 1756136274699 (10:37:54 GMT-0500 (hora estándar de Perú))
+2025-08-25 15:37:54:700 [b3b212c9][AppiumDriver@6408] Received response: null
+2025-08-25 15:37:54:700 [b3b212c9][AppiumDriver@6408] But deleting session, so not returning
+2025-08-25 15:37:54:700 [b3b212c9][AppiumDriver@6408] Responding to client with driver.deleteSession() result: null
+2025-08-25 15:37:54:703 [b3b212c9][HTTP] <-- DELETE /session/b3b212c9-bfad-4419-829c-bc8c8a381196 200 854 ms - 14 

@@ -17,7 +17,7 @@ from driver.driver_factory import (
 from utils.Xls_Reader import XlsReader  # Import the XlsReader class
 
 # ---------- Config ----------
-AVD_NAMES = ["Pixel4_API31_PlayStore", "Pixel4_API31_PlayStore_Clone1", "Pixel4_API31_PlayStore_Clone2"]
+AVD_NAMES = ["Nexus_5_API_31_Clone1", "Nexus_5_API_31_Clone2", "Nexus_5_API_31_Clone3"]
 PLATFORM_VERSION = os.getenv("ANDROID_PLATFORM_VERSION", "12")
 HEADLESS = os.getenv("EMU_HEADLESS", "false").lower() in {"1", "true", "yes", "y"}
 NO_SNAPSHOT = os.getenv("EMU_NO_SNAPSHOT", "true").lower() in {"1", "true", "yes", "y"}

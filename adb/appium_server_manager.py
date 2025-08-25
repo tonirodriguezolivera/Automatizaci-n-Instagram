@@ -125,9 +125,19 @@ class AppiumServerManager:
         return port
 
     @staticmethod
-    async def stop_appium_server(host: Optional[str] = None, port: Optional[int] = None) -> None:
+    async def stop_appium_server(host: Optional[str] = None, port: Optional[int] = None, timeout: float = 5.0, retry_interval: float = 0.5) -> None:
         """
-        Detiene la instancia en (host,port).
+        Detiene la instancia de Appium en (host, port) y verifica que el puerto se libere.
+
+        Args:
+            host (Optional[str]): Dirección del host donde está corriendo Appium. Por defecto, usa APPIUM_HOST o '127.0.0.1'.
+            port (Optional[int]): Puerto donde está corriendo Appium. Obligatorio.
+            timeout (float): Tiempo máximo (en segundos) para esperar a que el puerto se libere. Por defecto, 5 segundos.
+            retry_interval (float): Intervalo entre reintentos (en segundos) para verificar el puerto. Por defecto, 0.5 segundos.
+
+        Raises:
+            ValueError: Si no se proporciona el puerto.
+            RuntimeError: Si no se puede detener Appium o el puerto no se libera dentro del tiempo especificado.
         """
         host = host or os.getenv("APPIUM_HOST", "127.0.0.1")
         if port is None:
@@ -138,15 +148,35 @@ class AppiumServerManager:
             service = _services.pop(key, None)
 
         if not service:
-            # Puede que haya sido levantado externamente; no hay handler.
             print(f"[AppiumServerManager] No hay instancia registrada en {host}:{port}")
             return
 
         try:
+            # Detener el servicio de Appium
             await asyncio.to_thread(service.stop)
-            print(f"[AppiumServerManager] Appium detenido en {host}:{port}.")
+            print(f"[AppiumServerManager] Solicitud enviada para detener Appium en {host}:{port}.")
+
+            # Verificar si el puerto se ha liberado
+            start_time = asyncio.get_event_loop().time()
+            while asyncio.get_event_loop().time() - start_time < timeout:
+                try:
+                    # Intentar conectar al puerto para verificar si está en uso
+                    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+                        sock.settimeout(0.1)
+                        result = sock.connect_ex((host, port))
+                        if result != 0:  # Puerto libre (no se pudo conectar)
+                            print(f"[AppiumServerManager] Appium detenido correctamente en {host}:{port}. Puerto liberado.")
+                            return
+                except Exception as e:
+                    print(f"[AppiumServerManager] Error al verificar el puerto {host}:{port}: {e}")
+                    break
+                await asyncio.sleep(retry_interval)
+
+            raise RuntimeError(f"No se pudo confirmar que Appium se detuvo en {host}:{port}. El puerto sigue en uso.")
+
         except Exception as e:
-            print(f"[AppiumServerManager] Error al detener Appium {host}:{port}: {e}")
+            print(f"[AppiumServerManager] Error al detener Appium en {host}:{port}: {e}")
+            raise RuntimeError(f"Fallo al detener Appium en {host}:{port}: {e}")
 
     @staticmethod
     async def stop_all() -> None:
