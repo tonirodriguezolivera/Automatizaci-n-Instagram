@@ -5,6 +5,7 @@ import asyncio
 from datetime import datetime
 from multiprocessing import Process
 from collections import defaultdict
+from app.instagram_actions import InstagramActions
 
 from adb.appium_server_manager import AppiumServerManager
 import adb.emulator as Emulator
@@ -23,18 +24,18 @@ users = [
     {"user":"lisabarrett3952","password":"2jlvx3yar3","key":"6HSE HFCO JBVN AOTB 3MRK 6434 VDAV RKQU","new_password":"pass_nuevo4","avd_name":"Nexus_5_API_31_Clone1"},
     {"user":"rachelcarr6206","password":"4i8bh8bzm2","key":"Q5AP 77DS IVIR RGRB JV3M MRBU NV4N XUKS","new_password":"pass_nuevo5","avd_name":"Nexus_5_API_31_Clone1"},
     {"user":"nancypearson4528","password":"8eofzaosk6","key":"T5YE DPIT W43K Z56T IGV4 YFXU EFPS QJBI","new_password":"pass_nuevo6","avd_name":"Nexus_5_API_31_Clone1"},
-    {"user":"angelamason4501","password":"3dkifyrll4","key":"G5B4 SEYO V7AC M7XR BQXX SRUP O4G3 P3BW","new_password":"pass_nuevo7","avd_name":"Nexus_5_API_31_Clone2"},
-    {"user":"annavaldez861","password":"1sqi4s48v9","key":"FCL3 CKHK AJWT XVNR I4KY CQ2I QOBO A5FA","new_password":"pass_nuevo8","avd_name":"Nexus_5_API_31_Clone2"},
-    {"user":"marthawebb1079","password":"3xglwea8h0","key":"GJCQ 7WH2 GX77 7G5H RVLX W2CS 7MRJ MAGD","new_password":"pass_nuevo9","avd_name":"Nexus_5_API_31_Clone2"},
-    {"user":"dorisguerrero141","password":"36x7in1mz1","key":"LPUU VZZT U2WM FY6J 4J62 EA27 7WNB HHAA","new_password":"pass_nuevo10","avd_name":"Nexus_5_API_31_Clone2"},
-    {"user":"joantran940","password":"94bxhijfm2","key":"Z6VB ZBYC TK4V HMCG KAEZ AX5M NQ6O HTRX","new_password":"pass_nuevo11","avd_name":"Nexus_5_API_31_Clone2"},
-    {"user":"francesjohnston90","password":"3o5sp1zve6","key":"TIJS G65E IVFZ 3VX5 6UBG JW6I SUVV AKC7","new_password":"pass_nuevo12","avd_name":"Nexus_5_API_31_Clone4"},
-    {"user":"betty3739williams","password":"8xn7ci9qr0","key":"PPS6 JETO GX7G 7YUG XCII 2WTA BCJ2 TVOQ","new_password":"pass_nuevo13","avd_name":"Nexus_5_API_31_Clone4"},
-    {"user":"dorothypatterson97","password":"7w5kvhrq82","key":"Z4WO UNU2 NP7D CPA2 HJON S3HE F7GW ZJKY","new_password":"pass_nuevo14","avd_name":"Nexus_5_API_31_Clone4"},
-    {"user":"emmagonzalez3111","password":"104jp46tn3","key":"A2UH TUAL 53LI TP3D TNUX VNNL 4VHL 3VJV","new_password":"pass_nuevo15","avd_name":"Nexus_5_API_31_Clone4"},
-    {"user":"catherinehill5495","password":"8pjuapfmo6","key":"5P2D 6LOK EDA7 ALPR HJ46 SJQI YGGM YV5O","new_password":"pass_nuevo16","avd_name":"Nexus_5_API_31_Clone4"},
-    {"user":"victoriabanks734","password":"9n5pqt0ut4","key":"43NV HAWQ 6TQN LIAL 25QL SP7Y RSEM 2GXH","new_password":"pass_nuevo17","avd_name":"Nexus_5_API_31_Clone5"},
-    {"user":"bettylarson312","password":"1dqrua8wl4","key":"BFCW P7YD HM47 T2F6 EVBE RGZY 72RX UPMQ","new_password":"pass_nuevo18","avd_name":"Nexus_5_API_31_Clone5"}
+    {"user":"angelamason4501","password":"3dkifyrll4","key":"G5B4 SEYO V7AC M7XR BQXX SRUP O4G3 P3BW","new_password":"pass_nuevo7","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"annavaldez861","password":"1sqi4s48v9","key":"FCL3 CKHK AJWT XVNR I4KY CQ2I QOBO A5FA","new_password":"pass_nuevo8","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"marthawebb1079","password":"3xglwea8h0","key":"GJCQ 7WH2 GX77 7G5H RVLX W2CS 7MRJ MAGD","new_password":"pass_nuevo9","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"dorisguerrero141","password":"36x7in1mz1","key":"LPUU VZZT U2WM FY6J 4J62 EA27 7WNB HHAA","new_password":"pass_nuevo10","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"joantran940","password":"94bxhijfm2","key":"Z6VB ZBYC TK4V HMCG KAEZ AX5M NQ6O HTRX","new_password":"pass_nuevo11","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"francesjohnston90","password":"3o5sp1zve6","key":"TIJS G65E IVFZ 3VX5 6UBG JW6I SUVV AKC7","new_password":"pass_nuevo12","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"betty3739williams","password":"8xn7ci9qr0","key":"PPS6 JETO GX7G 7YUG XCII 2WTA BCJ2 TVOQ","new_password":"pass_nuevo13","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"dorothypatterson97","password":"7w5kvhrq82","key":"Z4WO UNU2 NP7D CPA2 HJON S3HE F7GW ZJKY","new_password":"pass_nuevo14","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"emmagonzalez3111","password":"104jp46tn3","key":"A2UH TUAL 53LI TP3D TNUX VNNL 4VHL 3VJV","new_password":"pass_nuevo15","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"catherinehill5495","password":"8pjuapfmo6","key":"5P2D 6LOK EDA7 ALPR HJ46 SJQI YGGM YV5O","new_password":"pass_nuevo16","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"victoriabanks734","password":"9n5pqt0ut4","key":"43NV HAWQ 6TQN LIAL 25QL SP7Y RSEM 2GXH","new_password":"pass_nuevo17","avd_name":"Nexus_5_API_31_Clone1"},
+    {"user":"bettylarson312","password":"1dqrua8wl4","key":"BFCW P7YD HM47 T2F6 EVBE RGZY 72RX UPMQ","new_password":"pass_nuevo18","avd_name":"Nexus_5_API_31_Clone1"}
 ]
 # -------------------------------------
 
@@ -130,7 +131,7 @@ async def process_group_async(avd_name: str, port_offset: int, user_list: list[d
             await async_start({"timeLimit": "120"})
             try:
                 # Aquí va tu flujo real por usuario:
-                # await InstagramActions.register_account(udid, user)
+                await InstagramActions.register_account(udid, user)
                 await asyncio.sleep(5)  # Simula trabajo real
             finally:
                 video_name = f"{udid}_{user['user']}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"

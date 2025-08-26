@@ -5,3 +5,4 @@ psutil
 typing-extensions
 aiofiles
 tinydb
+pyotp
