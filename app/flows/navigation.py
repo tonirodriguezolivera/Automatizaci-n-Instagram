@@ -23,6 +23,7 @@ class NavigationFlow:
         xp = self.loc.tab_icon_xpath_indexed.format(index)
         el = self.ui.by_xpath(xp, timeout=5)
         self.ui.tap(el)
+    
 
     def go_home(self):
         if not self._tap_by_desc_variants(self.loc.home_desc_variants):

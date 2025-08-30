@@ -119,7 +119,8 @@ async def launch(
     print(f"Starting emulator for '{avd_name}' on ADB port {port} (expected UDID: emulator-{port})...")
     cmd = [EMULATOR_BIN, "-avd", avd_name]
     cmd += ["-port", str(port)]
-    if headless:
+    
+    '''if headless:
         cmd += ["-no-window"]
     if wipe_data:
         cmd += ["-wipe-data"]
@@ -132,8 +133,9 @@ async def launch(
             "-gpu", "swiftshader_indirect",
         ]
     if extra_args:
-        cmd += extra_args
+        cmd += extra_args'''
     
+    print("Comando de lanzamiento:", " ".join(shlex.quote(c) for c in cmd))
     # Lanzar emulador en background
     await asyncio.create_subprocess_exec(*cmd, stdout=asyncio.subprocess.DEVNULL, stderr=asyncio.subprocess.STDOUT)
     await asyncio.sleep(3)

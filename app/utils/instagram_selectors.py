@@ -100,6 +100,9 @@ class ResourceID:
         self.PROFILE_TAB_ICON_VIEW = f"{APP_ID}:id/profile_tab_icon_view"
         self.PROFILE_TABS_CONTAINER = f"{APP_ID}:id/profile_tabs_container"
         self.REEL_RING = f"{APP_ID}:id/reel_ring"
+        self.SEEN_STATE = f"{APP_ID}:id/seen_state"     # NUEVO: anillo de stories (Appium Inspector)
+        self.STORY_RING_UNION = f"{self.REEL_RING}|{self.SEEN_STATE}"  # Unión de ids para compat
+
         self.REEL_VIEWER_IMAGE_VIEW = f"{APP_ID}:id/reel_viewer_image_view"
         self.REEL_VIEWER_MEDIA_CONTAINER = f"{APP_ID}:id/reel_viewer_media_container"
         self.REEL_VIEWER_TIMESTAMP = f"{APP_ID}:id/reel_viewer_timestamp"

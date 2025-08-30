@@ -29,6 +29,8 @@ LOGIN_TEXT_UNION = (
     "Log in|Iniciar sesión|Acceder|Se connecter|Continuer|Continuar|Continue"
 )
 
+LOGGED_IN_ACTIVITIES = (".activity.MainTabActivity", ".activity.MainActivity")
+
 # Popup de credenciales incorrectas
 LOGIN_FAIL_TITLE_UNION = (
     "That login info didn't work|"
@@ -149,10 +151,12 @@ class LoginFlow:
         secret_key: Optional[str] = None,
         new_password: Optional[str] = None
     ) -> bool:
+        
         # Espera a que IG esté activo (no abortamos si tarda)
         if not self.wait_instagram_activity(30):
             print("[Login] Activity IG no detectada (continuando de todos modos).")
 
+        
         # Si ya hay sesión, no hacemos nada
         if self._already_logged_in():
             print("[Login] Ya dentro (tab bar).")
@@ -256,3 +260,32 @@ class LoginFlow:
         except Exception:
             pass
         return False
+    
+    # --- NUEVO: verificación rápida sincrónica ---
+    def _logged_in_snapshot(self) -> bool:
+        # Marcadores de UI
+        if self.ga.id(self.rids.TAB_BAR).exists(1):
+            return True
+        if self.ga.id(self.rids.TAB_AVATAR).exists(1):
+            return True
+        if self.ga.desc_any(f"{TabBarText.HOME_CONTENT_DESC}|{TabBarText.PROFILE_CONTENT_DESC}").exists(1):
+            return True
+        # Activity principal
+        try:
+            act = self.driver.current_activity or ""
+            if any(act.endswith(x) for x in LOGGED_IN_ACTIVITIES):
+                return True
+        except Exception:
+            pass
+        return False
+
+    # --- NUEVO: API pública para consultar estado de sesión ---
+    def is_logged_in(self, timeout: int = 0) -> bool:
+        """Devuelve True si detecta sesión iniciada (con espera opcional)."""
+        end = time.time() + max(timeout, 0)
+        while True:
+            if self._logged_in_snapshot():
+                return True
+            if timeout <= 0 or time.time() >= end:
+                return False
+            time.sleep(0.5)
